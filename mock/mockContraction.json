@@ -1,0 +1,116 @@
+{
+    "uterineAssessment": {
+        "contractionFrequencyDisplay": "Parto contraction freq", 
+        "contractionIntensityDisplay": "Parto contraction Intensity",
+        "contractionDetails": [
+            {
+                "contractionFrequency": "7",
+                "contractionIntensity": "Moderate",
+                "nomenclatureID": "960970",
+                "frequencyUnit": null,
+                "resultDateTime": "2019-12-17T06:30:00Z",
+                "isModifiedFrequency": false,
+                "isModifiedIntensity": false
+            },
+            {
+                "contractionFrequency": "7",
+                "contractionIntensity": "Moderate",
+                "nomenclatureID": "960970",
+                "frequencyUnit": null,
+                "resultDateTime": "2019-12-17T07:30:00Z",
+                "isModifiedFrequency": false,
+                "isModifiedIntensity": false
+            },
+            {
+                "contractionFrequency": "5",
+                "contractionIntensity": "Mild",
+                "nomenclatureID": "5133252",
+                "frequencyUnit": null,
+                "resultDateTime": "2019-12-17T05:00:00Z",
+                "isModifiedFrequency": false,
+                "isModifiedIntensity": false
+            },
+            {
+                "contractionFrequency": "5",
+                "contractionIntensity": "Mild",
+                "nomenclatureID": "5133252",
+                "frequencyUnit": null,
+                "resultDateTime": "2019-12-17T04:30:00Z",
+                "isModifiedFrequency": false,
+                "isModifiedIntensity": false
+            },
+            {
+                "contractionFrequency": "8",
+                "contractionIntensity": "Strong",
+                "nomenclatureID": "960865",
+                "frequencyUnit": null,
+                "resultDateTime": "2019-12-17T08:20:00Z",
+                "isModifiedFrequency": false,
+                "isModifiedIntensity": false
+            },
+            {
+                "contractionFrequency": "8",
+                "contractionIntensity": "Strong",
+                "nomenclatureID": "960865",
+                "frequencyUnit": null,
+                "resultDateTime": "2019-12-17T08:45:00Z",
+                "isModifiedFrequency": false,
+                "isModifiedIntensity": false
+            },
+            {
+                "contractionFrequency": "8",
+                "contractionIntensity": "Strong",
+                "nomenclatureID": "960865",
+                "frequencyUnit": null,
+                "resultDateTime": "2019-12-17T09:10:00Z",
+                "isModifiedFrequency": false,
+                "isModifiedIntensity": false
+            },
+            {
+                "contractionFrequency": "3",
+                "contractionIntensity": null,
+                "nomenclatureID": null,
+                "frequencyUnit": null,
+                "resultDateTime": "2019-12-17T03:00:00Z",
+                "isModifiedFrequency": false,
+                "isModifiedIntensity": false
+            },
+            {
+                "contractionFrequency": null,
+                "contractionIntensity": "Strong",
+                "nomenclatureID": "960865",
+                "frequencyUnit": null,
+                "resultDateTime": "2019-12-17T12:00:00Z",
+                "isModifiedFrequency": false,
+                "isModifiedIntensity": false
+            },
+            {
+                "contractionFrequency": "4",
+                "contractionIntensity": "Not palpable",
+                "nomenclatureID": "9498979",
+                "frequencyUnit": null,
+                "resultDateTime": "2019-12-17T03:30:00Z",
+                "isModifiedFrequency": false,
+                "isModifiedIntensity": false
+            },
+            {
+                "contractionFrequency": "4",
+                "contractionIntensity": "Not palpable",
+                "nomenclatureID": "9498979",
+                "frequencyUnit": null,
+                "resultDateTime": "2019-12-17T03:50:00Z",
+                "isModifiedFrequency": false,
+                "isModifiedIntensity": false
+            },
+            {
+                "contractionFrequency": "2",
+                "contractionIntensity": null,
+                "nomenclatureID": null,
+                "frequencyUnit": null,
+                "resultDateTime": "2019-11-03T06:30:00Z",
+                "isModifiedFrequency": false,
+                "isModifiedIntensity": false
+            }
+        ]
+    }
+}

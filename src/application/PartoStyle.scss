@@ -1,0 +1,57 @@
+:root {
+  --partogram-js--terra-info-color: #a9a9a9;
+}
+  
+.info {
+  color: var(--partogram-js--terra-info-color, #a9a9a9);
+}
+
+.high {
+  color: #ff6100;
+}
+
+.low {
+  color: #0053e6;
+}
+
+.high-critical {
+  color: #c00;
+}
+
+.low-critical {
+  color: #c00;
+}
+
+.carbon-legend {
+  padding-left: 10px !important;
+}
+
+.fhr-legend .carbon-legend .carbon-legend-item {
+  width: 100%;
+}
+
+.parto-column-divider {
+  border-right: 1px inset #a9a9a9;
+}
+
+.parto-epidural-legend .carbon-legend .carbon-legend-item {
+  margin: 0.2rem;
+  padding: 0 0.8rem;
+  width: 100%;
+}
+
+.parto-text-align-right {
+  color: #a9a9a9;
+  text-align: right;
+}
+
+.parto-epidural-start-stop-display {
+  color: #a9a9a9;
+  font-size: smaller;
+  text-align: left;
+}
+
+.parto-epidural-legend .carbon-legend {
+  padding-left: 10px;
+}
+

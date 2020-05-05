@@ -1,0 +1,5 @@
+{
+  "partogram-js/partogram": {
+    "dependencies": ["./partogram-js/lib/registration"]
+  }
+}

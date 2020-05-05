@@ -1,0 +1,39 @@
+{
+    "laborDetails": {
+        "isFemalePatient": true,
+        "partogramStartDisplay": "Parto Start Date,Time",
+        "partogramStartDateTime": "2019-04-07T10:30:00Z",
+        "partogramStopDisplay": "Parto Date,Time",
+        "partogramStopDateTime": "2019-07-08T18:30:00Z",
+        "laborStartDateTime": "2019-07-07T19:40:00.00Z",
+        "laborStopDateTime": null,
+        "pregnancyDetails": {
+            "isActivePregnancy": true,
+            "pregnancyId": 12956119,
+            "onsetDate": "2018-08-15T05:00:00Z",
+            "estimatedGestationalAge": 300,
+            "estimatedDeliveryDate": "2019-05-22T05:00:00Z",
+            "deliveryDateTime": "2018-12-13T12:27:19Z",
+            "hasDelivered": false,
+            "history": {
+                "gravidaCount": 19,
+                "paraCount": 19,
+                "paraFullTermCount": 13,
+                "paraPrematureCount": 6,
+                "abortionsCount": 2,
+                "livingCount": 17,
+                "ectopicCount": 1,
+                "spontaneousAbortionCount": 1,
+                "inducedAbortionCount": 0,
+                "multipleBirth": 1,
+                "hadPreviousCSection": true,
+                "hadAllCSection": false,
+                "isMultiPara": true,
+                "isNulliPara": false
+            }
+        },
+        "maternalDetails": null,
+        "fetalDetails": null,
+        "medicationDetails": null
+    }
+}

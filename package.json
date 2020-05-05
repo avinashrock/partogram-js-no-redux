@@ -1,0 +1,177 @@
+{
+  "name": "partogram-js",
+  "version": "1.1.0",
+  "description": "Node module to support the rails engine partogram_engine",
+  "license": "== LICENSE",
+  "engines": {
+    "node": ">=8.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.cerner.com/aeon-womenshealth/partogram-js.git"
+  },
+  "keywords": [
+    "Cerner",
+    "Partogram-js"
+  ],
+  "publishConfig": {
+    "registry": "https://cernerrepos.net/api/npm/npm-integration-local"
+  },
+  "author": "Cerner Corporation",
+  "browserslist": [
+    "extends browserslist-config-terra"
+  ],
+  "eslintConfig": {
+    "extends": "terra",
+    "settings": {
+      "polyfills": [
+        "promises"
+      ]
+    },
+    "globals": {
+      "mountWithIntl": "readonly"
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-terra"
+  },
+  "bugs": {
+    "url": "https://jira2.cerner.com/projects/BLRWH"
+  },
+  "associated_engine": "https://github.cerner.com/aeon-womenshealth/partogram_engine",
+  "scripts": {
+    "build": "npm run compile",
+    "clean:all": "rimraf ./package-lock.json && rimraf ./node_modules",
+    "clean:install": "npm run clean:all && npm install",
+    "clean:obsolete-jest-snapshots": "jest -u",
+    "clean:obsolete-wdio-snapshots": "rimraf ./tests/wdio/**/__snapshots__ && npm run test:wdio",
+    "compile": "npm run compile:clean && npm run compile:build",
+    "compile:clean": "rimraf lib",
+    "compile:build": "babel src --out-dir lib --copy-files",
+    "deploy-gh-pages": "TERRA_DEV_SITE_PUBLIC_PATH='/aeon-womenshealth/partogram-js/' npm run pack && gh-pages -d build",
+    "lint": "npm run lint:js && npm run lint:scss",
+    "lint:js": "eslint --ext .js,.jsx .",
+    "lint:scss": "stylelint src/**/*.scss",
+    "pack": "NODE_ENV=production webpack --config node_modules/terra-dev-site/config/webpack/webpack.config.js -p",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "prepush": "node scripts/prepush/index.js",
+    "start": "tt-serve --config node_modules/terra-dev-site/config/webpack/webpack.config.js",
+    "start-static": "npm run pack && tt-serve-static",
+    "start-prod": "tt-serve --config node_modules/terra-dev-site/config/webpack/webpack.config.js --env.disableHotReloading -p",
+    "test": "npm run lint && npm run test:jest && npm run test:wdio",
+    "test:jest": "jest --config jestconfig.js",
+    "test:jest-coverage": "npm run test:jest -- --coverage",
+    "test:lint": "npm run lint",
+    "test:wdio": "wdio ./wdio.conf.js",
+    "test:wdio:local": "tt-wdio --config node_modules/terra-toolkit/config/wdio/wdio.conf.js --gridUrl='grid314.test.devcernerpowerchart.com' --browsers=['firefox','ie']"
+  },
+  "dependencies": {
+    "@cerner/carbon-graphs": "^2.0.1",
+    "axios": "^0.18.1",
+    "classnames": "^2.2.6",
+    "d3": "^5.9.2",
+    "deep-object-diff": "^1.1.0",
+    "mockdate": "^2.0.2",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
+    "orion-application": "^1.1.0",
+    "prop-types": "^15.6.2",
+    "react-intl": "^2.9.0",
+    "react-router-dom": "^5.0.1",
+    "stella-timeline": "2.2.2",
+    "terra-action-header": "^2.37.0",
+    "terra-alert": "^4.21.0",
+    "terra-application-layout": "^5.27.0",
+    "terra-avatar": "^2.34.0",
+    "terra-base": "^5.29.0",
+    "terra-button": "^3.32.0",
+    "terra-card": "^3.25.0",
+    "terra-clinical-detail-view": "^3.15.0",
+    "terra-clinical-header": "^3.13.0",
+    "terra-clinical-item-view": "^3.12.0",
+    "terra-clinical-label-value-view": "^3.15.0",
+    "terra-content-container": "^3.24.0",
+    "terra-divider": "^3.24.0",
+    "terra-doc-template": "^2.24.0",
+    "terra-grid": "^6.16.0",
+    "terra-icon": "^3.27.0",
+    "terra-image": "^3.24.0",
+    "terra-overlay": "^3.41.0",
+    "terra-popup": "^6.26.0",
+    "terra-spacer": "^3.30.0",
+    "terra-status-view": "^4.18.0",
+    "terra-text": "^4.25.0",
+    "terra-toggle-section-header": "^2.32.0",
+    "workflow-framework": "^1.0.0"
+  },
+  "peerDependencies": {
+    "orion-application": "^1.1.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-on-rails": "^7.0.4",
+    "react-intl": "^2.9.0",
+    "terra-base": "^5.28.0",
+    "terra-toolkit": "^5.20.0",
+    "webpack": "^4.41.6",
+    "workflow-framework": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-transform-object-assign": "^7.8.3",
+    "@babel/plugin-transform-regenerator": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "axios-mock-adapter": "^1.17.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.3",
+    "browserslist-config-terra": "^1.3.0",
+    "canvas": "^2.5.0",
+    "core-js": "^3.6.4",
+    "dynamic-component-catalog-toolkit": "^1.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-react-intl": "^2.0.6",
+    "enzyme-to-json": "^3.4.4",
+    "eslint": "^5.0.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-terra": "^2.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "gh-pages": "^2.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "node-sass": "^4.13.1",
+    "orion-toolkit-js": "^4.1.0",
+    "postcss-rtl": "1.6.0",
+    "raf": "^3.4.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-on-rails": "7.0.4",
+    "react-router": "^5.1.2",
+    "react-test-renderer": "^16.12.0",
+    "regenerator-runtime": "^0.13.3",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.3",
+    "stylelint": "^11.0.0",
+    "stylelint-config-terra": "^3.3.0",
+    "terra-dev-site": "^6.1.0",
+    "terra-toolkit": "^5.20.0",
+    "wdio-spec-reporter": "^0.1.5",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.1",
+    "utf-8-validate": "^5.0.2"
+  }
+}

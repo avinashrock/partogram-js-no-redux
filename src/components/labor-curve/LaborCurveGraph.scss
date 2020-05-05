@@ -1,0 +1,21 @@
+:local {
+    .parto-labor-curve-graph {
+      display: flex;
+    }
+    
+    .parto-labor-curve-legend {
+      width: 200px;
+    }
+  }
+  .carbon-data-activity-bar
+{
+  opacity:30%;
+}
+
+
+.labor-graph-container .carbon-graph-container {
+  padding-bottom: 1px !important;
+  padding-top: 1px !important;
+  padding-left: 1px;
+  margin-top:-35px;
+}

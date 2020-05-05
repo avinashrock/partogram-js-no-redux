@@ -1,0 +1,25 @@
+
+.carbon-legend {
+    padding-left: 10px !important;
+}
+.carbon-legend .carbon-legend-item {
+    width: 100%;
+}
+
+.parto-column-divider {
+    border-right: 1px inset #a9a9a9;
+}
+.parto-epidural-legend .carbon-legend .carbon-legend-item {
+    margin: .2rem;
+    padding: 0rem .8rem;
+}
+
+.parto-text-align-right {
+    text-align: right;
+    color: #a9a9a9;
+}
+
+.parto-epidural-legend .carbon-legend {
+    padding-left: 10px;
+
+}

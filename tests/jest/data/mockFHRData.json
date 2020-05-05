@@ -1,0 +1,68 @@
+{
+    "fetalHeartRateDetails": [
+        {
+            "dynamicLabel": "BABYA",
+            "dynamicLabelId": 12314,
+            "fhrBaselineDetails": [
+                {
+                    "name": "fhrBaselineDetails",
+                    "value": 120,
+                    "unit": "bpm",
+                    "documentedDateTime": "2018-12-31T19:35:00.000Z"
+                },
+                {
+                    "name": "fhrBaselineDetails",
+                   "value": 140,
+                    "unit": "bpm",
+                    "documentedDateTime": "2019-01-01T08:30:00.000Z"
+                }
+            ],
+            "fhrIntermittentDetails": [
+                {
+                    "name": "fhrIntermittent",
+                    "value": 130,
+                    "unit": "bpm",
+                    "documentedDateTime": "2019-01-01T08:30:00.000Z"
+                },
+                {
+                    "name": "fhrIntermittent",
+                    "value": 180,
+                    "unit": "bpm",
+                    "documentedDateTime": "2019-01-01T12:30:00.000Z"
+                }
+            ]
+        },
+        {
+            "dynamicLabel": "BABYB",
+            "dynamicLabelId": 12315,
+            "fhrBaselineDetails": [
+                {
+                    "name": "fhrBaselineDetails",
+                    "value": 140,
+                    "unit": "bpm",
+                    "documentedDateTime": "2018-12-31T19:35:00.000Z"
+                },
+                {
+                    "name": "fhrBaselineDetails",
+                    "value": 100,
+                    "unit": "bpm",
+                    "documentedDateTime": "2019-01-01T10:30:00.000Z"
+                }
+            ],
+            "fhrIntermittentDetails": [
+                {
+                    "name": "fhrIntermittent",
+                    "value": 160,
+                    "unit": "bpm",
+                    "documentedDateTime": "2018-12-31T19:35:00.000Z"
+                },
+                {
+                    "name": "fhrIntermittent",
+                    "value": 90,
+                    "unit": "bpm",
+                    "documentedDateTime": "2019-01-01T16:30:00.000Z"
+                }
+            ]
+        }
+    ]
+}
